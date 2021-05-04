@@ -1,8 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/home/Home';
+import Projects from './components/Projects';
 import HomeBio from './components/HomeBio';
 import Navbar from './components/Navbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,8 +18,20 @@ function App() {
         <HomeBio></HomeBio>
       </div>
       <div className="home-right">
+        <Router>
         <Navbar></Navbar>
-        <Home></Home>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home> 
+            </Route>
+            <Route path="/projects">
+              <Projects></Projects>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+        </Switch>
+        </Router>
       </div>
     </div>
   );

@@ -8,6 +8,14 @@ body {
   max-width: 100%;
   font-family: 'Jost', sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+}
 .total-site {
   padding-top: 80px;
   width: 90%;
@@ -19,7 +27,7 @@ body {
 .style-box {
   width: 45px;
   height: 45px;
-  background-color: rgb(33, 180, 180);
+  background-color: #7635f5;
   margin-right: 10px;
   text-align: center;
   line-height: 3;
@@ -214,7 +222,9 @@ nav li a:hover {
   left: 7px;
 }
 /* site main  */
-.site-main {
+.site-main,
+.projects-container,
+.contact {
   background-color: #fff;
   box-shadow: -3px 2px 21px 4px rgb(32 30 41 / 20%);
   padding: 20px 20px 40px;
@@ -279,18 +289,207 @@ nav li a:hover {
 /* skill set  */
 .skills {
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 20px;
   flex-wrap: wrap;
 }
 .skill-set img {
   width: 50px;
-  /* height: 50px; */
+  display: block;
+  margin-bottom: 10px;
 }
 .skills div {
   background-color: #eceef7;
   padding: 8px;
   width: 13%;
-  text-align: center;
   border-radius: 5px;
-  margin: 0 2%;
+  margin: 0 2% 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-set h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 0 30px;
+  font-size: 18px;
+  color: #7635f5;
+}
+.skill-set h4 span {
+  border-left: 3px solid #01d85f;
+  padding-left: 10px;
+}
+/* language and love  */
+.lang-love {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+.love {
+  width: 30%;
+}
+.love div {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.love .style-box:hover {
+  background-color: #01d85f;
+}
+.love .style-box {
+  font-size: 18px;
+  /* line-height: 2.5; */
+}
+.love div p:nth-child(2) {
+  font-size: 17px;
+  font-weight: 600;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+.lang {
+  width: 60%;
+}
+.prof {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.prof span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #01d85f;
+  margin-right: 10px;
+}
+.bubbles {
+  display: flex;
+}
+.bubbles.english span:nth-child(-n + 8) {
+  background-color: #7635f5;
+}
+.bubbles.bengali span:nth-child(n) {
+  background-color: #7635f5;
+}
+.bubbles.arabic span:nth-child(-n + 7) {
+  background-color: #7635f5;
+}
+.bubbles.hindi span:nth-child(-n + 4) {
+  background-color: #7635f5;
+}
+.prof h4:nth-child(n + 2) {
+  color: #808081;
+}
+/* projects  */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  margin-right: 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.project > div {
+  width: 45%;
+  position: relative;
+}
+/* .projects .project-img {
+  width: 30%;
+} */
+.project img {
+  width: 100%;
+  display: block;
+  box-shadow: 0px 0px 8px -1px #7635f5;
+  padding: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.project-overlay {
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  background-color: rgb(110, 110, 110);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.project-overlay:hover {
+  opacity: 0.7;
+}
+.project-overlay a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.project-detail h5 {
+  padding: 5px 0 15px;
+  color: #808081;
+}
+.project-detail h4 {
+  color: #7635f5;
+}
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.project-techs span {
+  display: block;
+  padding: 3px 10px;
+  margin: 0 10px 10px 0;
+  background-color: #eceef7;
+}
+/* contact  */
+.contact-form input,
+textarea {
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  background-color: #eceef7;
+  border: none;
+  outline: none;
+  font-family: 'Jost';
+}
+.contact-form textarea {
+  height: 160px;
+  resize: none;
+}
+.col-two {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+}
+.col-two input {
+  width: 43%;
+}
+input.submit-btn {
+  text-decoration: none;
+  display: block;
+  background: linear-gradient(to right, #01d85f 50%, #7635f5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  padding: 15px 33px;
+  transition: all 0.6s;
+  width: auto;
+  height: 50px;
+}
+input.submit-btn:hover {
+  background-position: left bottom;
 }

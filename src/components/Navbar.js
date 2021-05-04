@@ -2,39 +2,40 @@ import { faFile, faLightbulb, faUser } from '@fortawesome/free-regular-svg-icons
 import { faEnvelopeOpenText, faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
         <nav>
             <li>
-                <a href="" className="active">
+                <Link to="/" className="active">
                     <FontAwesomeIcon className="nav-icon" icon={faHome}/>
                     <span>Home</span>
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="">
+                <Link to="/resume">
                 <FontAwesomeIcon className="nav-icon sided" icon={faUser}/>
                     <p>Resume</p>
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="">
+                <Link to="/projects">
                 <FontAwesomeIcon className="nav-icon sided" icon={faLightbulb}/>
                     <span>Projects</span>
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="">
+                <Link to="/blogs">
                 <FontAwesomeIcon className="nav-icon" icon={faFile}/>
                     <p>Blog</p>
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="">
+                <Link to="/contact">
                 <FontAwesomeIcon className="nav-icon sided" icon={faEnvelopeOpenText}/>
                     <p>Contact</p>
-                </a>
+                </Link>
             </li>
         </nav>
     )
