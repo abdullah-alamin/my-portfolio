@@ -10,6 +10,9 @@ import {
   Link
 } from "react-router-dom";
 import Contact from './components/Contact';
+import Blogs from './components/Blogs';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,7 +33,14 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
+            <Route path="/blogs">
+              <Blogs></Blogs>
+            </Route>
+            <Route path="/resume">
+              <Resume></Resume>
+            </Route>
         </Switch>
+          <Footer></Footer>
         </Router>
       </div>
     </div>

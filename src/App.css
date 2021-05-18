@@ -21,7 +21,7 @@ h6 {
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
-  /* display: flex; */
+  margin-bottom: 100px;
   justify-content: space-between;
 }
 .style-box {
@@ -59,7 +59,7 @@ h6 {
 }
 /* home bio  */
 .home-bio {
-  width: 30%;
+  width: 29%;
   background: white;
   box-shadow: -3px 2px 21px 4px rgb(32 30 41 / 20%);
   float: left;
@@ -192,7 +192,7 @@ svg.svg-second {
 nav {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   background-color: #fff;
   height: 90px;
   box-shadow: -3px 2px 21px 4px rgb(32 30 41 / 20%);
@@ -224,7 +224,9 @@ nav li a:hover {
 /* site main  */
 .site-main,
 .projects-container,
-.contact {
+.contact,
+.blogs,
+.resume-wrap {
   background-color: #fff;
   box-shadow: -3px 2px 21px 4px rgb(32 30 41 / 20%);
   padding: 20px 20px 40px;
@@ -492,4 +494,106 @@ input.submit-btn {
 }
 input.submit-btn:hover {
   background-position: left bottom;
+}
+
+/* blog */
+.blog-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.blog {
+  width: 45%;
+  padding-bottom: 30px;
+}
+.blog-head img {
+  width: 100%;
+  min-height: 216px;
+}
+.blog-head {
+  position: relative;
+  margin-bottom: -5px;
+}
+.blog-content {
+  background-color: #eceef7;
+  padding: 30px 25px;
+}
+.blog-content h4,
+.blog-content p {
+  padding-bottom: 15px;
+  transition: all 0.2s;
+}
+.blog-content p {
+  color: gray;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 15px;
+}
+.blog-content a {
+  color: #7635f5;
+  transition: all 0.4s;
+}
+.blog-date {
+  position: absolute;
+  background-color: #7635f5;
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  bottom: 25px;
+  left: 20px;
+  transition: all 0.4s;
+}
+.blog-date:hover {
+  background-color: #01d85f;
+}
+.blog-content h4:hover,
+.blog-content a:hover {
+  color: #01d85f;
+}
+/* resume */
+.resume-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.resume-item {
+  width: 60%;
+}
+.resume-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.resume-date {
+  display: flex;
+  margin-left: 15px;
+  border-left: 2px solid #01d85f;
+  padding-left: 35px;
+  margin-bottom: 25px;
+}
+.resume-date p {
+  margin-right: 10px;
+  padding: 3px 15px;
+  background-color: #eceef7;
+  font-style: italic;
+}
+.resume-text {
+  margin-left: 30px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+.resume-block {
+  margin-bottom: 60px;
+}
+.resume-wrap .style-box:hover {
+  background-color: #01d85f;
+}
+/* footer  */
+.footer {
+  height: 60px;
+  background-color: #eceef7;
+  box-shadow: -3px 13px 21px 4px rgb(32 30 41 / 20%);
+  text-align: center;
+  line-height: 3.5;
 }

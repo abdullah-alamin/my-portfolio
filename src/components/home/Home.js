@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import About from './About'
 import LanguageLove from './LanguageLove'
 import ShortBio from './ShortBio'
